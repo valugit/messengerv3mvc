@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*
+* Definitly looking to save my eyes here.
+*/
+Body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+button {
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+section {
+  height: 100vh;
+}
+section, section > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-top: 20px;
+}
+section > form > input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+}
+section > form > input:focus {
+  border: 1px solid #9ef;
+}
+section > form > label {
+  align-self: flex-start;
+}
+
+#login {
+  width: 100%;
+  height: 25px;
+  margin-top: 1em;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+#login:hover {
+  border: 1px solid #0f0;
+  color: #0f0;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+  width: 100vw;
+}
+main div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  padding: 0px 5px;
+}
+main form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  padding-top: 20px;
+  margin: 0;
+}
+main button:hover {
+  border: 1px solid #f00;
+  color: #f00;
+  cursor: pointer;
+}
+
+/* Message list */
+#messages {
+  height: 80vh;
+  list-style-type: none;
+  overflow-y: scroll;
+}
+#messages li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #eeeeee25;
+  padding: 10px 20px;
+  margin: 5px 5px 5px -35px;
+}
+#messages li span:first-of-type {
+  font-size: 20px;
+}
+#messages li span:nth-of-type(2) {
+  font-size: 9px;
+  color: #ccc;
+}
+#messages li span:last-of-type {
+  margin-top: 10px;
+}
+
+/* Write Message input */
+#send {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px;
+}
